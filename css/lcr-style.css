@@ -1,0 +1,202 @@
+.lcr-desktop-button{
+  text-align: center;
+  text-rendering: auto;
+  font-size: 25px !important;
+  line-height: 40px !important;
+  width: 250px;
+  height: auto;
+  position:fixed;
+  display: block;
+  z-index:9999;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+.lcr-desktop-widget{
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  background: #303036;
+  width: 250px;
+  display:inline-block;
+  font-size: 16px !important;
+  line-height: 25px !important;
+}
+
+#lcr_close_widget{
+  color: white;
+  float: right;
+  cursor: pointer; 
+  padding-right: 5px;
+}
+
+.lcr-widget-top-text{
+  color: white;
+  float: left;
+  padding: 10px;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.lcr-button {
+  display: inline-block !important;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  background: #3b5998;
+  border: none;
+  color: white;
+  transition: .2s;
+  text-transform: none;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 230px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+.lcr-button:before,
+.lcr-button:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 11px;
+  width: 45px;
+  content: "\00a0";
+  font-family: 'FontAwesome', sans-serif;
+  box-sizing: border-box !important;
+  -webkit-box-sizing:border-box !important;
+  text-align: center;
+  transition: .2s;
+  transform-origin: 50% 60%;
+}
+.lcr-button:before {
+  background: rgba(0, 0, 0, 0.1);
+}
+.lcr-button:hover {
+  background: #0079a5;
+}
+.lcr-button:active,
+.lcr-button:focus {
+  background: #002e3f;
+  outline: none;
+}
+
+.lcr-phone {
+  background: #139675;
+}
+.lcr-phone:hover {
+  background: #0d6952;
+}
+.lcr-phone:active,
+.phone:focus {
+  background: #083b2e;
+}
+.lcr-phone:after {
+  content: "\F095";
+}
+.lcr-phone:hover:after {
+  -webkit-animation: wiggle .05s alternate ease infinite;
+  animation: wiggle .05s alternate ease infinite;
+}
+
+.lcr-facebook:after {
+  content: "\f09a";
+}
+.lcr-facebook:hover:after {
+  -webkit-animation: none;
+  -webkit-transform: scale(1.4);
+  animation: none;
+  transform: scale(1.4);
+}
+
+.lcr-whatsapp {
+  background: #4dc247;
+}
+.lcr-whatsapp:hover {
+  background: #075E54;
+}
+.lcr-whatsapp:active,
+.lcr-whatsapp:focus {
+  background: #075E54;
+}
+.lcr-whatsapp:after {
+  content: "\f232";
+}
+.lcr-whatsapp:hover:after {
+  -webkit-animation: none;
+  -webkit-transform: scale(1.4);
+  animation: none;
+  transform: scale(1.4);
+}
+
+.lcr-email {
+  background: #FE5F55;
+}
+.lcr-email:hover {
+  background: #fe2f22;
+}
+.lcr-email:active,
+.lcr-email:focus {
+  background: #b90c01;
+}
+.lcr-email:after {
+  content: "\f0e0";
+}
+.lcr-email:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+.lcr-custom {
+  background: #3697b2;
+}
+.lcr-custom:hover {
+  background: #2d768b;
+}
+.lcr-custom:active,
+.lcr-custom:focus {
+  background: #2d768b;
+}
+.lcr-custom:after {
+  content: "\F054";
+}
+.lcr-custom:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3px);
+  }
+}
+@-webkit-keyframes wiggle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
